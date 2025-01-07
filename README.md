@@ -59,8 +59,7 @@ A pre-trained word embedding model by goolge was used.
 ```
 https://code.google.com/archive/p/word2vec/
 ```
-
-In practice, it is necessary to write the path where the pre-trained model is located in the line below.
+It is necessary to download this model in the above site and indicate the position of the model file in the line below.
 ```python
 google: gensim.models.KeyedVectors = gensim.models.KeyedVectors.load("pre_trained_data/goolge.bin", 'r')
 ```
