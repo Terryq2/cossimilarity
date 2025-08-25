@@ -1,0 +1,4 @@
+{
+    "GOOGLE_NEWS_VECTOR_DATA_FILE_PATH": "GoogleNews-vectors-negative300.bin",
+    "INPUT_FILE_NAMES": ["l1_in", "l2_in"]
+}
