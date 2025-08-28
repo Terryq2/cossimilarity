@@ -13,7 +13,7 @@ class driver:
         with open(config_path, encoding='utf-8') as json_data:
             self.config = json.load(json_data)
         self.google = gensim.models.KeyedVectors.load_word2vec_format(
-                                        self.config['GOOGLE_NEWS_VECTOR_DATA_FILE_PATH'], 
+                                        self.config['GOOGLE_NEWS_VECTOR_DATA_FILE_PATH'],
                                         binary=True,
                                     )
 
@@ -26,7 +26,7 @@ class driver:
         return self.google.get_mean_vector(sentence,
                                         pre_normalize = normalize)
 
-    def get_vector(self, word: str):
+    def get_vector(self, word: str):g
         """
         Obtains the vector representations of a list of a word
         """
@@ -113,10 +113,7 @@ class driver:
 
             result_list.append(self.current_word_similarity(current_word, running_list, normalize))
             if current_word_class != 'Function':
-                if current_word_pos != 'PROPN':
-                    running_list.append(current_word.lower())
-                    continue
-                running_list.append(current_word)
+                running_list.append(current_word if current_word_pos == 'PROPN' else current_word.lower())
         return result_list
 
 
