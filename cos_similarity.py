@@ -26,7 +26,7 @@ class driver:
         return self.google.get_mean_vector(sentence,
                                         pre_normalize = normalize)
 
-    def get_vector(self, word: str):g
+    def get_vector(self, word: str):
         """
         Obtains the vector representations of a list of a word
         """
