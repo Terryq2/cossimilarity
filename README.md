@@ -1,4 +1,4 @@
-# Word Cosine Similarity Analysis
+# Word Cosine Semantic Similarity Analysis
 
 This program computes the **cosine similarity** of each word in a text with the **mean vector of the words that precede it**. The goal is to analyze the predictability or “surprise” of a word in a sentence, which can provide insight into its relationship with the **N400 event-related potential** in neuroscience.
 
